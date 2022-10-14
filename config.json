@@ -1,0 +1,17 @@
+{
+  "ownerNumber": ["6282373797559@s.whatsapp.net"],
+  "ownerName": ["Ferdi Ananda"],
+  "botName": "Bot || Ferdi Ananda Store",
+  "buttonName": "Join Grup WhatsApp",
+  "buttonLink": "https://chat.whatsapp.com/invite/E8TlsK8glV278iLGtNeQ9x",
+  "buttonName2": "Order Jasa Aplikasi Premium",
+  "buttonLink2": "https://chat.whatsapp.com/invite/F3FJlKK1xZK3yAT3kmRPzj",
+  "sessionName": "session",
+  "pathimg": "./media/anime-path.jpg",
+  "gamewaktu": 60,
+  "limitCount": 10,
+  "gcount": {
+	"prem": 99999,
+	"user": 10
+  }
+}
