@@ -282,7 +282,7 @@ module.exports = async(conn, msg, m, setting, store, welcome) => {
 		const buttonsDefault = [
 		    { urlButton: { displayText: `${setting.buttonName}`, url : `${setting.buttonLink}` } },
 		    { urlButton: { displayText: `${setting.buttonName2}`, url : `${setting.buttonLink2}` } },
-			{ quickReplyButton: { displayText: `Owner 🤵', id: `${prefix}owner` } },
+			{ quickReplyButton: { displayText: `Owner 🤵`, id: `${prefix}owner` } },
 			{ quickReplyButton: { displayText: `Runtime ⚡`, id: `${prefix}runtime` } }
 		]
 		const buttonsDefa = [{buttonId: `${prefix}owner`, buttonText: { displayText: `Owner 🤵` }, type: 2 }, {buttonId: `${prefix}runtime`, buttonText: { displayText: `Runtime ⚡` }, type: 2 }, {buttonId: `${prefix}donasi`, buttonText: { displayText: "Donasi 💸" }, type: 2 }]

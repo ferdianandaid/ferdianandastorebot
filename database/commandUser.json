@@ -4,7 +4,7 @@
     "db": [
       {
         "nama": "#menu",
-        "count": 12
+        "count": 16
       },
       {
         "nama": "#sticker",
@@ -44,7 +44,7 @@
       },
       {
         "nama": "#susunkata",
-        "count": 1
+        "count": 2
       },
       {
         "nama": "#listprem",
@@ -60,7 +60,7 @@
       },
       {
         "nama": "#sc",
-        "count": 1
+        "count": 2
       },
       {
         "nama": "#tiktok",
@@ -109,6 +109,10 @@
       {
         "nama": "#attp",
         "count": 1
+      },
+      {
+        "nama": "#donasi",
+        "count": 2
       }
     ]
   },
