@@ -48,7 +48,7 @@ const exif = new Exif()
 let mode = 'public'
 let own2 = '6285155088506@s.whatsapp.net'
 let fakenya = '*Bot By Ferdi Ananda*'
-let footernya = '*BOT || FERDI ANANDA STORE*'
+let footernya = '*MEGUMIN BOT BY FERDI ANANDA*'
 const imgbbapi = "15406aacb1c760c28233e81aa9ec8e6e"
 let typemenu = 'button'
 
@@ -104,7 +104,7 @@ module.exports = async(conn, msg, m, setting, store, welcome) => {
 		const isCmd = command.startsWith(prefix)
 		const isGroup = msg.key.remoteJid.endsWith('@g.us')
 		const sender = isGroup ? (msg.key.participant ? msg.key.participant : msg.participant) : msg.key.remoteJid
-		const isOwner = ownerNumber == sender ? true : [`${ownerNumber}`, "6285921165857@s.whatsapp.net", `${own2}`].includes(sender) ? true : false
+		const isOwner = ownerNumber == sender ? true : [`${ownerNumber}`, "6282372797559@s.whatsapp.net", `${own2}`].includes(sender) ? true : false
 		const pushname = msg.pushName
 		const q = chats.slice(command.length + 1, chats.length)
 		const body = chats.startsWith(prefix) ? chats : ''
@@ -282,10 +282,10 @@ module.exports = async(conn, msg, m, setting, store, welcome) => {
 		const buttonsDefault = [
 		    { urlButton: { displayText: `${setting.buttonName}`, url : `${setting.buttonLink}` } },
 		    { urlButton: { displayText: `${setting.buttonName2}`, url : `${setting.buttonLink2}` } },
-			{ quickReplyButton: { displayText: `🤝 Contributor`, id: `${prefix}thanksto` } },
-			{ quickReplyButton: { displayText: `💰 Donasi`, id: `${prefix}donate` } }
+			{ quickReplyButton: { displayText: `Owner 🤵', id: `${prefix}owner` } },
+			{ quickReplyButton: { displayText: `Runtime ⚡`, id: `${prefix}runtime` } }
 		]
-		const buttonsDefa = [{buttonId: `${prefix}thanksto`, buttonText: { displayText: `🤝 Contributor` }, type: 2 }, {buttonId: `${prefix}donasi`, buttonText: { displayText: `💰 Donasi` }, type: 2 }, {buttonId: `${prefix}dashboard`, buttonText: { displayText: "🏷️ Dashboard" }, type: 2 }]
+		const buttonsDefa = [{buttonId: `${prefix}owner`, buttonText: { displayText: `Owner 🤵` }, type: 2 }, {buttonId: `${prefix}runtime`, buttonText: { displayText: `Runtime ⚡` }, type: 2 }, {buttonId: `${prefix}donasi`, buttonText: { displayText: "Donasi 💸" }, type: 2 }]
         
         const login = [{buttonId: `${prefix}login`, buttonText: { displayText: "LOGIN" }, type: 1 }]
         
@@ -570,7 +570,7 @@ break
             case prefix+'sc':
 case prefix+'sourcecode':
 var no = '6282373797559'
-sendContact(from, no.split('@s.whatsapp.net')[0], 'Developer Bot', msg)
+sendContact(from, no.split('@s.whatsapp.net')[0], 'FERDI ANANDA', msg)
 reply(`Jika kamu ingin membeli Script bot ini, silahkan chat ke nomor dibawah\n_wa.me/6282373797559_`)
 addCountCmd('#sc', sender, _cmd)
 break
@@ -688,22 +688,23 @@ case prefix+'setmenu':
   reply(`Sukses Mengubah Menu Menjadi ${q}`)
   }
   break
-case prefix+'spesialpromo':
+case prefix+'sewabot':
 var teks = `${ucapanWaktu} @${sender.split('@')[0]} 👋
 
-*SPESIAL PROMO HUT RI*
+*HARGA SEWA BOT PERBULAN*
 
-*- Sewa Bot 60 Hari*
-*- Rp ~25.000~ > Rp 15.000*
+*- Sewa Bot 30 Hari(1 Bulan)*
+*- Rp ~25.000~ > Rp 20.000*
+_*Sudah Termasuk User Premium*_
 
-*NOTE : HANYA BERLAKU HARI INI SAJA!!!*
-*MINAT CHAT OWNER*`
-conn.sendMessage(from, {caption: teks, image: {url: `https://i.ibb.co/1GHb53T/340695da0268.jpg`}, mentions: [sender]}, {quoted: fimage})
+*HANYA BERLAKU HARI INI SAJA!!!*
+*MINAT? HUBUNGI OWNER*`
+conn.sendMessage(from, {caption: teks, image: {url: `/media/anime-path.jpg`}, mentions: [sender]}, {quoted: fimage})
 break
 case prefix+'cekprem':
             case prefix+'cekpremium':
                 if (!isPremium) return reply(`Kamu bukan user premium, kirim perintah *${prefix}daftarprem* untuk membeli premium`)
-                if (isOwner) return reply(`Lu owner bego!`)
+                if (isOwner) return reply(`Kamu Adalah Owner Bot!`)
                 if (_prem.getPremiumExpired(sender, premium) == "PERMANENT") return reply(`PERMANENT`)
                 let cekvipp = ms(_prem.getPremiumExpired(sender, premium) - Date.now())
                 let premiumnyaa = `*Expire :* ${cekvipp.days} day(s) ${cekvipp.hours} hour(s) ${cekvipp.minutes} minute(s) ${cekvipp.seconds} second(s)`
@@ -1130,7 +1131,7 @@ if (checkLogins(sender, loginnya) === false) return conn.sendMessage(from, { tex
 			      limitAdd(sender, limit)
 				}).catch(() => reply(mess.error.api))
 			    break*/
-				///SCRAPER YTMP3 BY CHRISTIAN ID 
+				///SCRAPER YTMP3 BY FERDI ANANDA 
 case prefix+'ytmp3':
 var teks = `${ucapanWaktu} @${sender.split('@')[0]} 👋\nKamu Belum Terdaftar Di Database Silakan Klik Button Dibawah Untuk Mengakses Fitur Ini`
 if (checkLogins(sender, loginnya) === false) return conn.sendMessage(from, { text: teks, footer: `© ${footernya}`, buttons: login, mentions: [sender]}, { quoted: fimage })
@@ -1400,8 +1401,8 @@ case prefix+'store':
                 }
             }
             var listMsg = {
-                text: `${ucapanWaktu} @${sender.split("@")[0]}\nSilahkan Pilih Produknya\n\n*📝 List : ${groupName}*`,
-                buttonText: 'Click Here!',
+                text: `${ucapanWaktu} @${sender.split("@")[0]}\n\n*📝 List : ${groupName}*`,
+                buttonText: 'Pilih Disini!',
                 footer: `⌚ Jam : ${jam}\n📆 Tanggal : ${tanggal}`,
                 mentions: [sender],
                 sections: [{

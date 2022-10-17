@@ -4,7 +4,7 @@
     "db": [
       {
         "nama": "#menu",
-        "count": 11
+        "count": 12
       },
       {
         "nama": "#sticker",
@@ -80,11 +80,11 @@
       },
       {
         "nama": "#addlist",
-        "count": 1
+        "count": 2
       },
       {
         "nama": "#ceklist",
-        "count": 1
+        "count": 2
       },
       {
         "nama": "#antilink",

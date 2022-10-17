@@ -46,7 +46,6 @@ ${readmore}
  • ${prefix}donasi
  • ${prefix}thanksto
  • ${prefix}delete
- • ${prefix}kirim
  • ${prefix}cekprem
  • ${prefix}listprem
  • ${prefix}listban
@@ -103,7 +102,6 @@ ${readmore}
  • ${prefix}list
  • ${prefix}proses
  • ${prefix}done
- • ${prefix}iklan
   
  *STALK MENU*
  • ${prefix}stalkml
@@ -119,7 +117,7 @@ ${readmore}
  • ${prefix}siapakahaku
  • ${prefix}mancing
   
- *PAYMENT & BANK*
+ *BALAMCE & LIMIT*
  • ${prefix}buylimit
  • ${prefix}buyglimit
  • ${prefix}transfer
