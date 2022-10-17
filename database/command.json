@@ -81,11 +81,11 @@
   },
   {
     "nama": "#addlist",
-    "count": 2
+    "count": 24
   },
   {
     "nama": "#ceklist",
-    "count": 2
+    "count": 4
   },
   {
     "nama": "#antilink",
@@ -113,6 +113,10 @@
   },
   {
     "nama": "#attp",
+    "count": 1
+  },
+  {
+    "nama": "#dellist",
     "count": 1
   }
 ]

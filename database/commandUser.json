@@ -80,11 +80,11 @@
       },
       {
         "nama": "#addlist",
-        "count": 2
+        "count": 24
       },
       {
         "nama": "#ceklist",
-        "count": 2
+        "count": 3
       },
       {
         "nama": "#antilink",
@@ -113,6 +113,10 @@
       {
         "nama": "#donasi",
         "count": 2
+      },
+      {
+        "nama": "#dellist",
+        "count": 1
       }
     ]
   },
@@ -129,6 +133,15 @@
       },
       {
         "nama": "#listsewa",
+        "count": 1
+      }
+    ]
+  },
+  {
+    "jid": "6285774540937@s.whatsapp.net",
+    "db": [
+      {
+        "nama": "#ceklist",
         "count": 1
       }
     ]
